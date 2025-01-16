@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>time</title>
+    <style>
+      body {
+        font-size: 2em;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 강의 코드
+    <script>
+      var now = new Date();
+      var disp = now.toLocaleTimeString();
+      document.write("현재 시간 : " + disp);
+    </script> -->
+    <div id="clock"></div>
+    <script>
+      function updateTime() {
+        var now = new Date();
+        var disp = now.toLocaleString("ko-KR", { hour12: false });
+        document.getElementById("clock").innerHTML = "현재 시간: " + disp;
+      }
+
+      // 초기 시간 표시
+      updateTime();
+
+      // 1초 (1000밀리초)마다 시간 갱신
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
+</html>

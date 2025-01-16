@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>if 4</title>
+  </head>
+  <body>
+    <script>
+      // 유저 입력 값
+      let userId = window.prompt("아이디를 입력하세요.");
+      let userPw = window.prompt("Password를 입력하세요.");
+      // 값 비교
+      // CPU 참조를 가장 적게 받는 방식, if~else 구문이 적합
+      if (userId == "Kim" && userPw == "1111") {
+        alert(`${userId}님, 로그인을 환영합니다.`);
+      } else if (userId == "Kim") {
+        alert(`Password가 틀렸습니다.`);
+      } else {
+        alert(`아이디가 틀렸습니다.`);
+      }
+    </script>
+  </body>
+</html>

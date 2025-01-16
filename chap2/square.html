@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사각형 너비</title>
+  </head>
+  <body>
+    <div id="square"></div>
+    <script>
+      function square() {
+        var width = prompt("사각형 너비: ");
+        var height = prompt("사각형 높이: ");
+
+        var square = width * height;
+
+        document.getElementById("square").innerHTML = "사격형 너비: " + square;
+      }
+
+      square();
+    </script>
+  </body>
+</html>

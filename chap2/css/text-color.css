@@ -1,0 +1,13 @@
+body {
+  text-align: center;
+}
+
+#heading {
+  color: blue;
+  user-select: none;
+}
+
+#text {
+  color: grey;
+  font-size: 15px;
+}

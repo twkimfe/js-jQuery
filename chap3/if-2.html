@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>if 2</title>
+  </head>
+  <body>
+    <!-- if 3은 if 2화 병합함 -->
+    <script>
+      // // 짝수 검사 프로그램
+      // var value = window.prompt("숫자를 입력해주세요");
+      // // prompt에서 받은 value는 string이어서, 강제로 number로 변환 후 구현
+      // value = parseInt(value);
+      // alert(typeof value);
+
+      // if (value % 2 == 0) {
+      //   alert("짝수입니다.");
+      // } else {
+      //   alert("홀수입니다.");
+      // }
+
+      // 2와 3 공배수 검사하는 프로그램
+      let value = window.prompt("숫자를 입력해주세요.");
+      value = parseInt(value);
+
+      // &&는 논리 연산자로써 두 조건이 T일 때, True를 반환
+      // if (value % 2 == 0 && value % 3 == 0) {
+      //   alert(`${value}는 2, 3의 공배수 입니다.`);
+      // } else {
+      //   alert(`${value}는 2, 3의 공배수가 아닙니다.`);
+      // }
+
+      // ||는 논리 연산자로써 두 조건 중 한 조건이 T일 때, True 반환
+      if (value % 2 == 0 || value % 3 == 0) {
+        alert(`${value}는 2나, 3의 공배수 입니다.`);
+      } else {
+        alert(`${value}는 2나, 3의 공배수가 아닙니다.`);
+      }
+    </script>
+  </body>
+</html>

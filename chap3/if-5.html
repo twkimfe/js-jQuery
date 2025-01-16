@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>if 4</title>
+  </head>
+  <body>
+    <script>
+      // 유저 입력 값
+      let value = window.prompt("행운 번호를 선택하세요.");
+
+      // 값 비교
+      // CPU 참조를 가장 적게 받는 방식, if~else 구문이 적합
+      if (value == "1") {
+        document.write("축하드려요! 1등상 에 당첨 되었습니다.");
+      } else if (value == "2") {
+        document.write("축하드려요! 2등상 에 당첨 되었습니다.");
+      } else {
+        document.write(`아쉽네요, 다음에 또 참여해주세요!`);
+      }
+    </script>
+  </body>
+</html>
