@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>99tims tables</title>
+  </head>
+  <body>
+    <h1>계산식</h1>
+    <script>
+      // 99단
+      // for (var i = 1; i <= 19; i++) {
+      //   document.write("<div>");
+      //   document.write(`<h3>${i} 단</h3>`);
+      //   for (var j = 1; j <= 19; j++) {
+      //     document.write(`${i} X ${j} = ${i * j} <br>`);
+      //   }
+      //   document.write("</div>");
+      // }
+
+      // 팩토리얼 계산
+      let n = prompt("숫자를 입력하세요");
+      n = Number(n);
+      let nFact = 1;
+      let i = 2;
+      let result = document.createElement("div");
+
+      while (i <= n) {
+        nFact *= i;
+        result.innerHTML += `
+        <h2>
+          ${i} ! = ${nFact}
+        </h2>`;
+        i++;
+
+        document.body.appendChild(result);
+      }
+    </script>
+  </body>
+</html>
