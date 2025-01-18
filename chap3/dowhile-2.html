@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반복(do-while)</title>
+  </head>
+  <body>
+    <script>
+      var sum = 0;
+      var i = 1;
+      // do-while문은 사용자에게 먼저 의사 확인 후, 그 다음 반복을 결정한다
+      // do-while문은 최소 1번 실행하는 것이 특징
+
+      do {
+        sum += i;
+        document.write(`${sum} ${i} <br>`);
+        i++;
+      } while (i <= 100);
+      document.write(`1-${i - 1} 까지의 합은 ${sum}`);
+    </script>
+  </body>
+</html>

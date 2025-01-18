@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>반복(while)</title>
+  </head>
+  <body>
+    <script>
+      var sum = 0;
+      var i = 1;
+      // while문은 무한루프용으로 사용된다
+      // 만약에 조건이 false인 경우, 한번도 실행이 안될 수 있다
+
+      while (i <= 100) {
+        sum += i;
+        document.write(`${sum}, ${i}<br>`);
+        i++;
+      }
+      document.write(`1-${i - 1}까지의 합은 ${sum}`);
+    </script>
+  </body>
+</html>
