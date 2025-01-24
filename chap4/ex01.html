@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Color change</title>
+  </head>
+  <body>
+    <div>
+      <ul class="menu" id="menu1">
+        <li>김밥</li>
+        <li>비빔밥</li>
+        <li>제육덮밥</li>
+        <li>돈가스</li>
+        <li>우동</li>
+      </ul>
+      <ul class="menu" id="menu2">
+        <li>삼계탕</li>
+        <li>갈비탕</li>
+        <li>김치찌개</li>
+        <li>된장찌개</li>
+        <li>육계장</li>
+      </ul>
+    </div>
+    <script>
+      window.onload = function () {
+        // menu2 검색
+        let menu2 = document.getElementById("menu2");
+        let liArrays = menu2.getElementsByTagName("li");
+
+        for (let i = 0; i < liArrays.length; i++) {
+          let li = liArrays[i];
+          li.style.color = "blue";
+        }
+      };
+    </script>
+  </body>
+</html>

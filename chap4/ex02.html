@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Color change</title>
+    <!-- CDN 방식: 온라인에서만 코드 작동 -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <!-- 다운로드 방식: jQuery 파일을 폴더에 저장 및 연결 -->
+    <script src="libs/jquery-3.7.1.js"></script>
+    <script>
+      // 현 문서가 준비 완료 시, #menu li 를 찾아서 스타일 적용
+      $(document).ready(function () {
+        $("#menu2 li").css("color", "#f00");
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <ul class="menu" id="menu1">
+        <li>김밥</li>
+        <li>비빔밥</li>
+        <li>제육덮밥</li>
+        <li>돈가스</li>
+        <li>우동</li>
+      </ul>
+      <ul class="menu" id="menu2">
+        <li>삼계탕</li>
+        <li>갈비탕</li>
+        <li>김치찌개</li>
+        <li>된장찌개</li>
+        <li>육계장</li>
+      </ul>
+    </div>
+  </body>
+</html>
