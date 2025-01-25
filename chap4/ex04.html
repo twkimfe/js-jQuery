@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text hide</title>
+
+    <script src="libs/jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#showText").click(function () {
+          $("div").hide();
+        });
+        $("#hideText").click(function () {
+          $("div").show();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>Hello, this is JQuery test words</div>
+    <button id="showText">Hide text</button>
+    <button id="hideText">Show text</button>
+  </body>
+</html>
