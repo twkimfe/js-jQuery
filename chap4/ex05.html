@@ -4,18 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Earth animation</title>
-    <link rel="stylesheet" href="css/earth.css" />
+    <link rel="stylesheet" href="css/text.css" />
     <script src="libs/jquery-3.7.1.js"></script>
-    <script src="js/earth.js"></script>
+    <script>
+      $(document).ready(function () {
+        function hello() {
+          let rnd1 = Math.floor(Math.random() * 20);
+          let rnd2 = Math.floor(Math.random() * 40);
+          let rnd3 = Math.floor(Math.random() * 30) + 300;
+
+          $(".hello").css({
+            bottom: rnd1,
+            left: rnd2,
+          });
+
+          $(".hello .text").css({ "background-size": rnd3 + "%" });
+        }
+        setInterval(hello, 50);
+      });
+    </script>
   </head>
   <body>
-    <div id="panel">
-      <div id="bar">
-        <img src="images/earth-11015_1280.jpg" id="earth" />
-      </div>
-    </div>
-    <div id="btn">
-      <button id="btnStart">Start</button>
+    <div class="hello">
+      <div class="text">Hello!</div>
     </div>
   </body>
 </html>

@@ -1,0 +1,30 @@
+* {
+  background-color: #000;
+  color: #fff;
+}
+
+#earth {
+  width: 80px;
+  position: absolute;
+  left: 10px;
+  top: -90px;
+}
+
+.hello {
+  background-image: url(../images/earth-11015_1280.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 400px;
+  height: 300px;
+  position: relative;
+}
+
+.hello .text {
+  bottom: 0;
+  font-family: Verdana;
+  font-size: 40pt;
+  font-weight: bold;
+  position: absolute;
+  text-shadow: 0 0 5px gray;
+}
